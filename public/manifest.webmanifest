@@ -1,0 +1,11 @@
+{
+  "name": "StudyPlanner",
+  "short_name": "StudyPlanner",
+  "description": "A focused study planning system for competitive exams.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f7f4",
+  "theme_color": "#0b6b57",
+  "orientation": "portrait-primary",
+  "icons": []
+}
