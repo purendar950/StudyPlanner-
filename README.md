@@ -26,6 +26,37 @@ npm install
 npm run dev
 ```
 
+## Exam Planner
+
+The planner is a full offline-first study system under `src/planner/`.
+
+- **Six sections** — Home (today), Syllabus, Calendar, Revision, Progress, Plan.
+- **Four-level hierarchy** — Plan → Subject → Chapter → Topic, with topic status
+  (Not done / Done / To Revise), topic size (Small 1 / Medium 2 / Big 4 effort points)
+  and chapter difficulty (Easy / Normal / Tough) that drives the default topic size.
+- **19 exam templates** across SSC, Railways, Banking, UPSC & State PSC, Defence,
+  Teaching and Police, each with the complete subject/chapter/topic tree
+  (SSC CGL alone ships 5 subjects, 80 chapters and 303 topics).
+- **Plan creation** from a template, a pasted syllabus, or from scratch, through a
+  six-step wizard: source → exam & date → daily goal & rest days → chapter ratings →
+  strategy → preview.
+- **Weighted auto-distribution** with balanced / syllabus-order / priority-first
+  strategies, overload handling (strict, slight overflow, fit-before-exam) and rest days.
+- **Daily flow** — today's topics, daily to-do habits, streaks, finish-day rollover
+  with undo, move/swap topics, and missed-topic recovery.
+- **Spaced revision** at 1, 3, 7 and 21 days, plus custom revision dates.
+- **Analytics** — syllabus completion, per-subject and per-chapter mastery, 90-day
+  heatmap, 7-day consistency and required-topics-per-day guidance.
+
+Plans persist in `localStorage`; no backend or API key is required.
+
+```bash
+npm install
+npm run dev     # local dev server
+npm test        # planner engine tests
+npm run build   # typecheck + production build
+```
+
 ## Product roadmap
 
 1. Foundation & design system
